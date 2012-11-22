@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11806,9 +11806,9 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="PORTC_L" pin="PC2"/>
-<wire x1="-72.39" y1="-5.08" x2="-72.39" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-72.39" y="-20.32" size="1.778" layer="95" rot="R90"/>
+<wire x1="-77.47" y1="-5.08" x2="-77.47" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="U1" gate="PORTC_L" pin="PC0"/>
+<label x="-77.47" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ADC2" class="0">
@@ -11832,9 +11832,9 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 <pinref part="C12" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-77.47" y1="-5.08" x2="-77.47" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U1" gate="PORTC_L" pin="PC0"/>
-<label x="-77.47" y="-20.32" size="1.778" layer="95" rot="R90"/>
+<pinref part="U1" gate="PORTC_L" pin="PC2"/>
+<wire x1="-72.39" y1="-5.08" x2="-72.39" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-72.39" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="U1-RX" class="0">
