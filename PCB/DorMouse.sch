@@ -10820,6 +10820,9 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0402" value="10nF"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0402" value="4.7uF"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0402" value="1uF"/>
+<part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0402" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -10973,6 +10976,9 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 <instance part="SUPPLY41" gate="GND" x="74.93" y="113.03"/>
 <instance part="C4" gate="G$1" x="-168.91" y="80.01" rot="R180"/>
 <instance part="C5" gate="G$1" x="-85.09" y="121.92" rot="R180"/>
+<instance part="C13" gate="G$1" x="-10.16" y="115.57" rot="R180"/>
+<instance part="SUPPLY11" gate="GND" x="-10.16" y="110.49"/>
+<instance part="R8" gate="G$1" x="26.67" y="123.19"/>
 </instances>
 <busses>
 </busses>
@@ -11312,6 +11318,10 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 <wire x1="73.66" y1="119.38" x2="74.93" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="74.93" y1="118.11" x2="74.93" y2="115.57" width="0.1524" layer="91"/>
 <pinref part="SUPPLY41" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11661,8 +11671,11 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 <net name="USB-5V" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="USB"/>
-<wire x1="-5.08" y1="120.65" x2="-16.51" y2="120.65" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="120.65" x2="-10.16" y2="120.65" width="0.1524" layer="91"/>
 <label x="-21.59" y="120.65" size="1.778" layer="95"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="120.65" x2="-16.51" y2="120.65" width="0.1524" layer="91"/>
+<junction x="-10.16" y="120.65"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="1"/>
@@ -11677,14 +11690,14 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 </net>
 <net name="CHARGING(-)" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="!POK"/>
-<wire x1="15.24" y1="123.19" x2="20.32" y2="123.19" width="0.1524" layer="91"/>
-<label x="17.78" y="120.65" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="PORTA_L" pin="PA0"/>
 <wire x1="-77.47" y1="40.64" x2="-77.47" y2="30.48" width="0.1524" layer="91"/>
 <label x="-80.01" y="36.83" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="31.75" y1="123.19" x2="34.29" y2="123.19" width="0.1524" layer="91"/>
+<label x="34.29" y="123.19" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI-1" class="0">
@@ -11787,41 +11800,41 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 </net>
 <net name="ADC1" class="0">
 <segment>
-<wire x1="-77.47" y1="-5.08" x2="-77.47" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U1" gate="PORTC_L" pin="PC0"/>
-<label x="-77.47" y="-20.32" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="HIGH-G_ACC" gate="G$1" pin="Z_OUT"/>
 <wire x1="158.75" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
 <label x="165.1" y="25.4" size="1.778" layer="95"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U1" gate="PORTC_L" pin="PC2"/>
+<wire x1="-72.39" y1="-5.08" x2="-72.39" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-72.39" y="-20.32" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="ADC2" class="0">
-<segment>
-<pinref part="U1" gate="PORTC_L" pin="PC1"/>
-<wire x1="-74.93" y1="-5.08" x2="-74.93" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-74.93" y="-20.32" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="HIGH-G_ACC" gate="G$1" pin="Y_OUT"/>
 <wire x1="158.75" y1="20.32" x2="172.72" y2="20.32" width="0.1524" layer="91"/>
 <label x="165.1" y="20.32" size="1.778" layer="95"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U1" gate="PORTC_L" pin="PC1"/>
+<wire x1="-74.93" y1="-5.08" x2="-74.93" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-74.93" y="-20.32" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="ADC3" class="0">
-<segment>
-<pinref part="U1" gate="PORTC_L" pin="PC2"/>
-<wire x1="-72.39" y1="-5.08" x2="-72.39" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-72.39" y="-20.32" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="HIGH-G_ACC" gate="G$1" pin="X_OUT"/>
 <wire x1="158.75" y1="15.24" x2="172.72" y2="15.24" width="0.1524" layer="91"/>
 <label x="165.1" y="15.24" size="1.778" layer="95"/>
 <pinref part="C12" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="-77.47" y1="-5.08" x2="-77.47" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="U1" gate="PORTC_L" pin="PC0"/>
+<label x="-77.47" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="U1-RX" class="0">
@@ -12298,6 +12311,13 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="U1" gate="PORTB_H" pin="PB9"/>
 <wire x1="-11.43" y1="39.37" x2="-11.43" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="!POK"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="21.59" y1="123.19" x2="15.24" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
