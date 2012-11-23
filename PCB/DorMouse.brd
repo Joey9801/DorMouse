@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2773,7 +2773,20 @@ design rules under a new name.</description>
 <via x="25.9" y="10.8" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="25.9" y1="10.8" x2="25.57" y2="11.13" width="0.6096" layer="16"/>
 <wire x1="25.57" y1="11.13" x2="25.57" y2="23.33" width="0.6096" layer="16"/>
-<wire x1="17" y1="47.65" x2="15.95" y2="46.6" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="16" isolate="0.3048" orphans="yes">
+<vertex x="0.3" y="69.2"/>
+<vertex x="0.3" y="0.3"/>
+<vertex x="40.6" y="0.3"/>
+<vertex x="40.6" y="69"/>
+<vertex x="0.5" y="69"/>
+</polygon>
+<polygon width="0.254" layer="1" isolate="0.3048" orphans="yes">
+<vertex x="0.3" y="69.1"/>
+<vertex x="0.3" y="0.2"/>
+<vertex x="40.6" y="0.2"/>
+<vertex x="40.6" y="68.9"/>
+<vertex x="0.5" y="68.9"/>
+</polygon>
 </signal>
 <signal name="VCC">
 <contactref element="LOW-G_ACC" pad="1"/>

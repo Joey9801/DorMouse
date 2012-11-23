@@ -12315,6 +12315,52 @@ http://docs-europe.electrocomponents.com/webdocs/0dbd/0900766b80dbde80.pdf</desc
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,25.4,-29.21,GPS,10_GND,GND,,,"/>
+<approved hash="104,1,25.4,-39.37,GPS,12_GND,GND,,,"/>
+<approved hash="104,1,71.12,-29.21,GPS,9_V_RESET,N$15,,,"/>
+<approved hash="104,1,71.12,-34.29,GPS,8_VCC,VCC,,,"/>
+<approved hash="104,1,71.12,-39.37,GPS,7_VCC_IO,VCC,,,"/>
+<approved hash="104,1,71.12,-69.85,GPS,1_GND,GND,,,"/>
+<approved hash="104,1,-33.02,85.09,U1POWER,VDD_1,VCC,,,"/>
+<approved hash="104,1,-38.1,85.09,U1POWER,VDD_2,VCC,,,"/>
+<approved hash="104,1,-43.18,85.09,U1POWER,VDD_3,VCC,,,"/>
+<approved hash="104,1,-58.42,85.09,U1POWER,VSS_1,GND,,,"/>
+<approved hash="104,1,-63.5,85.09,U1POWER,VSS_2,GND,,,"/>
+<approved hash="104,1,-68.58,85.09,U1POWER,VSS_3,GND,,,"/>
+<approved hash="104,1,-48.26,85.09,U1POWER,VDD_4,VCC,,,"/>
+<approved hash="104,1,-73.66,85.09,U1POWER,VSS_4,GND,,,"/>
+<approved hash="204,1,-186.69,88.9,U1AN_POWER,VBAT,,,,"/>
+<approved hash="104,1,-186.69,83.82,U1AN_POWER,VSSA,GND,,,"/>
+<approved hash="104,1,-186.69,78.74,U1AN_POWER,VDDA,VCC,,,"/>
+<approved hash="104,1,109.22,71.12,CN1,SD_VDD,VCC,,,"/>
+<approved hash="202,1,-5.08,125.73,IC2,DC,,,,"/>
+<approved hash="202,1,167.64,81.28,X1,4,,,,"/>
+<approved hash="202,1,222.25,27.94,XB1,!RESET,,,,"/>
+<approved hash="106,1,67.31,-2.54,ACC-INT1,,,,,"/>
+<approved hash="106,1,67.31,2.54,ACC-INT2,,,,,"/>
+<approved hash="106,1,-44.45,40.64,MISO-3,,,,,"/>
+<approved hash="106,1,-46.99,40.64,MOSI-3,,,,,"/>
+<approved hash="106,1,25.4,-59.69,N$1,,,,,"/>
+<approved hash="106,1,71.12,-49.53,N$4,,,,,"/>
+<approved hash="106,1,-67.31,40.64,N$7,,,,,"/>
+<approved hash="106,1,25.4,-64.77,N$10,,,,,"/>
+<approved hash="106,1,67.31,7.62,N$11,,,,,"/>
+<approved hash="106,1,25.4,-44.45,N$16,,,,,"/>
+<approved hash="106,1,25.4,-54.61,N$20,,,,,"/>
+<approved hash="106,1,25.4,-69.85,N$23,,,,,"/>
+<approved hash="106,1,25.4,-49.53,N$24,,,,,"/>
+<approved hash="106,1,-49.53,40.64,SCL,,,,,"/>
+<approved hash="106,1,-52.07,40.64,SDA,,,,,"/>
+<approved hash="115,1,121.095,80.6662,CN1,,,,,"/>
+<approved hash="115,1,215.942,74.7353,FTDI-HEADER,,,,,"/>
+<approved hash="115,1,-93.98,-2.43417,Y1,,,,,"/>
+<approved hash="115,1,-110.101,43.18,S1,,,,,"/>
+<approved hash="115,1,-95.6395,43.18,S2,,,,,"/>
+<approved hash="115,1,285.75,78.5326,JTAG1,,,,,"/>
+<approved hash="115,1,-74.6083,35.56,CHRG,,,,,"/>
+<approved hash="115,1,67.0729,119.249,CN2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
